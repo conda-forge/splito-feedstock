@@ -1,5 +1,5 @@
 {% set name = "splito" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/splito-{{ version }}.tar.gz
-  sha256: 3837ffbdb854fc92dabe6dd67ae9b9123c0a544949f562f56b827613153dae4a
+  sha256: 0277e34a7f4d7df4e6775aca48686c1374d13527509198b76d86ce2c3cc68800
 
 build:
   noarch: python
