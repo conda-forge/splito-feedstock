@@ -1,9 +1,5 @@
 {% set name = "splito" %}
-<<<<<<< 0.1.4_h63e05e
 {% set version = "0.1.4" %}
-=======
-{% set version = "0.1.3" %}
->>>>>>> main
 
 package:
   name: {{ name|lower }}
@@ -11,11 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/splito-{{ version }}.tar.gz
-<<<<<<< 0.1.4_h63e05e
   sha256: a54ea50eb70a1ad4853c97430e78c388d18c1080def416f77f246d5ac27e9d83
-=======
-  sha256: 6c41838401644d613211e22cf454dc66e273070c619071c426494bb7589c57b1
->>>>>>> main
 
 build:
   noarch: python
@@ -32,7 +24,7 @@ requirements:
     - python >=3.9
     - tqdm
     - loguru
-    - pydantic
+    - pydantic >=2
     - numpy
     - pandas
     - scipy
@@ -40,7 +32,7 @@ requirements:
     - matplotlib-base
     - seaborn
     - jenkspy
-    - datamol
+    - datamol >=0.12.5
 
 test:
   imports:
